@@ -1,5 +1,3 @@
-
-
 const loadProducts = () => {
     fetch("https://dummyjson.com/products")
     .then((res) => res.json())
@@ -10,9 +8,9 @@ const loadProducts = () => {
 };
 loadProducts();
 
-const loadModalData=async(id)=>{
-    url=`https://dummyjson.com/products/${id}`
-        const res=await fetch(url)
-        const details=await res.json()
-        displayModal(details.products);
-}
+const loadModalData = async (id) => {
+    const url = `https://dummyjson.com/products/${id}`;
+    const res = await fetch(url);
+    const details = await res.json();
+    displayModal(details);
+};

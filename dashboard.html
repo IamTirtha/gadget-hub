@@ -35,8 +35,21 @@
         <div class="flex items-center gap-4">
 
         <!-- Cart -->
-        <div class="text-2xl cursor-pointer">
+        <button id="cart-btn" class="text-white text-xl cursor-pointer">
             🛒
+        </button>
+
+        <div id="cart-panel" 
+            class="fixed right-0 top-0 w-80 h-full bg-gray-900 text-white p-4 hidden overflow-y-auto">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl">Your Cart</h2>
+                <button id="cart-close-btn" class="text-white text-xl leading-none hover:text-red-400" aria-label="Close cart">
+                    x
+                </button>
+            </div>
+            <div id="cart-container" class="space-y-4 border border-gray-600 p-2">
+                <!-- Items will come here -->
+            </div>
         </div>
 
         <!-- Logout -->
@@ -52,7 +65,7 @@
     </nav>
 
 
-    <!-- ================= BANNERS ================= -->
+    <!-- ================= Category button ================= -->
     <section class="p-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <div class="flex gap-3 p-4 ">
             <button id="allbtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" onclick="filterProducts('all')">All</button>
@@ -69,7 +82,6 @@
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
 
     </div>
-
 
     <!-- ================= MORE SECTION ================= -->
     <section class="p-6 bg-gray-800 mt-6">
@@ -97,7 +109,6 @@
     <!-- Modal Container -->
 <!-- Modal Background -->
 <div id="modal-container" class="fixed inset-0 bg-black/60 hidden justify-center items-center z-50">
-
     <!-- Modal Box -->
     <div class="bg-[#111] text-white w-[90%] md:w-[70%] lg:w-[50%] rounded-2xl overflow-hidden shadow-xl relative">
 
