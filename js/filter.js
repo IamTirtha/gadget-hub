@@ -1,13 +1,11 @@
 let allProducts=[]
+let filtered = [];
 const filterProducts = (category) => {
     
         if (category === "all") {
         displayAllProducts(allProducts);
         return;
     }
-
-        const filtered = allProducts.filter(product => 
-        product.category === category
-    );
+    filtered = allProducts.filter(product => product.category === category);
     displayAllProducts(filtered);
 }

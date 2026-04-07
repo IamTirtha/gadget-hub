@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: /GadgetHub/loginform.html");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./styles/tailwind.css">
+    <link rel="stylesheet" href="../styles/tailwind.css">
     <!-- Glow effect -->
     <style>
         .glow {
@@ -53,14 +62,9 @@
         </div>
 
         <!-- Logout -->
-        <div onclick="document.getElementById('logout-btn').addEventListener('dblclick',function(){
-            localStorage.setItem('isLoggedOut','true')
-            window.location.href='index.html'
-        })">
-            <button id="logout-btn" class="bg-red-500 hover:bg-red-700 px-4 py-2 rounded-lg">
+        <a href="../auth/logout.php" id="logout-btn" class="bg-red-500 hover:bg-red-700 px-4 py-2 rounded-lg inline-block">
             Logout
-            </button>
-        </div>
+        </a>
         </div>
     </nav>
 
@@ -133,10 +137,11 @@
         © 2026 Gadget Hub. All rights reserved.
     </footer>
 
-    <script src="./js/api.js"></script>
-    <script src="./js/ui.js"></script>
-    <script src="./js/filter.js"></script>
-    <script src="./js/buttonfunctionality.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="../js/filter.js"></script>
+    <script src="../js/buttonfunctionality.js"></script>
+    <!-- <script src="../js/addtocart.js"></script> -->
     </body>
 </html>
 
