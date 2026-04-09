@@ -61,6 +61,11 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </div>
 
+        <a href="../profile/profile.php" 
+                class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg inline-block">
+                👤 Profile
+        </a>
+
         <!-- Logout -->
         <a href="../auth/logout.php" id="logout-btn" class="bg-red-500 hover:bg-red-700 px-4 py-2 rounded-lg inline-block">
             Logout
@@ -141,6 +146,8 @@ if (!isset($_SESSION['user_id'])) {
     <script src="../js/ui.js"></script>
     <script src="../js/filter.js"></script>
     <script src="../js/buttonfunctionality.js"></script>
+    <script src="../js/wishlist.js"></script>
+    <script src="../js/cart.js"></script> 
     <!-- <script src="../js/addtocart.js"></script> -->
     </body>
 </html>
