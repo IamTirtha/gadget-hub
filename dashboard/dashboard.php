@@ -59,6 +59,10 @@ if (!isset($_SESSION['user_id'])) {
             <div id="cart-container" class="space-y-4 border border-gray-600 p-2">
                 <!-- Items will come here -->
             </div>
+            <a href="/GadgetHub/checkout.php"
+               class="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
+                Proceed to Checkout
+            </a>
         </div>
 
         <a href="../profile/profile.php" 
@@ -142,12 +146,12 @@ if (!isset($_SESSION['user_id'])) {
         © 2026 Gadget Hub. All rights reserved.
     </footer>
 
-    <script src="../js/api.js"></script>
-    <script src="../js/ui.js"></script>
+    <script src="../js/api.js?v=20260427-2"></script>
+    <script src="../js/ui.js?v=20260427-2"></script>
     <script src="../js/filter.js"></script>
     <script src="../js/buttonfunctionality.js"></script>
     <script src="../js/wishlist.js"></script>
-    <script src="../js/cart.js"></script> 
+    <script src="../js/cart.js?v=20260427-2"></script> 
     <!-- <script src="../js/addtocart.js"></script> -->
     </body>
 </html>

@@ -1,8 +1,8 @@
 <?php
-$host = "sql305.infinityfree.com";
-$user = "if0_41616374";
-$pass = "SreeTirtha20";
-$db   = "if0_41616374_gadget_Hub_db";
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "gadgethub";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
