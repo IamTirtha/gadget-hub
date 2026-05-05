@@ -1,11 +1,14 @@
-let allProducts=[]
-let filtered = [];
-const filterProducts = (category) => {
-    
-        if (category === "all") {
+var allProducts = [];
+var filteredProducts = [];
+
+function filterProducts(category) {
+    const selectedCategory = category || "all";
+
+    if (selectedCategory === "all") {
         displayAllProducts(allProducts);
         return;
     }
-    filtered = allProducts.filter(product => product.category === category);
-    displayAllProducts(filtered);
+
+    filteredProducts = allProducts.filter(product => product.category === selectedCategory);
+    displayAllProducts(filteredProducts);
 }

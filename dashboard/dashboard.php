@@ -60,7 +60,7 @@ if (!isset($_SESSION['user_id'])) {
                 <!-- Items will come here -->
             </div>
             <a href="/GadgetHub/checkout.php"
-               class="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
+                class="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
                 Proceed to Checkout
             </a>
         </div>
@@ -81,11 +81,11 @@ if (!isset($_SESSION['user_id'])) {
     <!-- ================= Category button ================= -->
     <section class="p-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <div class="flex gap-3 p-4 ">
-            <button id="allbtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" onclick="filterProducts('all')">All</button>
-            <button id="beautybtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" onclick="filterProducts('beauty')">Beauty</button>
-            <button id="fragrancesbtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" onclick="filterProducts('fragrances')">Fragnance</button>
-            <button id="furniturebtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" onclick="filterProducts('furniture')">Furniture</button>
-            <button id="groceriesbtn"class="filter-btn bg-gray-700 px-4 py-2 rounded" onclick="filterProducts('groceries')">Groceries</button>
+            <button id="allbtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" data-category="all">All</button>
+            <button id="beautybtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" data-category="beauty">Beauty</button>
+            <button id="fragrancesbtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" data-category="fragrances">Fragrance</button>
+            <button id="furniturebtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" data-category="furniture">Furniture</button>
+            <button id="groceriesbtn" class="filter-btn bg-gray-700 px-4 py-2 rounded" data-category="groceries">Groceries</button>
         </div>
     </section>
 
@@ -146,10 +146,10 @@ if (!isset($_SESSION['user_id'])) {
         © 2026 Gadget Hub. All rights reserved.
     </footer>
 
-    <script src="../js/api.js?v=20260427-2"></script>
+    <script src="../js/api.js?v=20260505-1"></script>
     <script src="../js/ui.js?v=20260427-2"></script>
-    <script src="../js/filter.js"></script>
-    <script src="../js/buttonfunctionality.js"></script>
+    <script src="../js/filter.js?v=20260505-1"></script>
+    <script src="../js/buttonfunctionality.js?v=20260505-1"></script>
     <script src="../js/wishlist.js"></script>
     <script src="../js/cart.js?v=20260427-2"></script> 
     <!-- <script src="../js/addtocart.js"></script> -->
